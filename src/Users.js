@@ -16,6 +16,10 @@ export const Users = ({items, isLoading}) => {
           <Skeleton />
           <Skeleton />
         </div>
+      ) : (
+        <ul className='users-list'>
+          <User />
+        </ul>
       )}
     </>
   )
