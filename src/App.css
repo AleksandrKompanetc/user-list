@@ -76,3 +76,15 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+.user-item {
+  list-style: none;
+}
+
+.user-content {
+  display: flex;
+}
+
+.user-avatar {
+  border-radius: 50%;
+}

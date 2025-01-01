@@ -1,16 +1,16 @@
 import React from 'react';
 
 export const User = () => (
-  <li>
-    <div>
-      <img width="50px" src="./avatar.jpg" alt="" />
+  <li className='user-item'>
+    <div className='user-content'>
+      <img width="20px" src="./avatar.jpg" alt="Avatar" className='user-avatar' />
       <div>
-        <h3>Amon Bower</h3>
+        <h3 className=''>Amon Bower</h3>
         <p>
           george.bluth@reqres.in
         </p>
       </div>
+      <img width="26px" className='action' src="./plus.svg" alt="Action" />
     </div>
-    <img className='action' src="" alt="Action" />
   </li>
 )
