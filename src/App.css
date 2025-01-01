@@ -66,6 +66,7 @@ body {
 .search-input {
   border: none;
   outline: none;
+  color: #aba9a9;
 }
 
 .send-invite-btn {
@@ -84,7 +85,8 @@ body {
 .user-content {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
 }
 
 .user-title {
@@ -94,6 +96,10 @@ body {
 .user-name {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.user-email {
+  color: #aba9a9;
 }
 
 .user-avatar {
