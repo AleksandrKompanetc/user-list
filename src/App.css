@@ -83,6 +83,11 @@ body {
 
 .user-content {
   display: flex;
+  flex-direction: row;
+}
+
+.user-title {
+  text-align: left;
 }
 
 .user-name {
