@@ -48,10 +48,19 @@ body {
 }
 
 .users-container {
-  max-width: 350px;
+  max-width: 300px;
   padding: 20px;
   background-color: #fff;
   border-radius: 15px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-icon {
+  
 }
 
 .search-input {

@@ -3,7 +3,7 @@ import React from 'react';
 export const User = () => (
   <li>
     <div>
-      <img src="" alt="" />
+      <img width="50px" src="./avatar.jpg" alt="" />
       <div>
         <h3>Amon Bower</h3>
         <p>
