@@ -84,6 +84,7 @@ body {
 .user-content {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
 .user-title {
@@ -92,8 +93,10 @@ body {
 
 .user-name {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .user-avatar {
+  vertical-align: center;
   border-radius: 50%;
 }
