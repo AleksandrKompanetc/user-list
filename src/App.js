@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import { Users } from './Users';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Users isLoading />
-      <Success />
+      {/* <Success /> */}
     </div>
   );
 }
