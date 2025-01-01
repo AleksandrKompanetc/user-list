@@ -22,6 +22,7 @@ export const Users = ({items, isLoading}) => {
           <User />
         </ul>
       )}
+      <button className='send-invite-btn'>Send invite</button>
     </>
   )
 }

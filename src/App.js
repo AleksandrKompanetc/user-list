@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Users />
+      <Users isLoading />
       <Success />
     </div>
   );
