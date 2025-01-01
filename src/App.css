@@ -44,6 +44,18 @@ body {
   }
 }
 
+.users-container {
+  background-color: #c4bfbf;
+}
+
 .search-input {
   border: none;
+  outline: none;
+}
+
+.send-invite-btn {
+  padding: 5px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
 }
