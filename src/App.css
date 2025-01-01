@@ -1,11 +1,14 @@
 body {
-  margin: 0;
+  margin: 0px auto;
   padding: 0;
   box-sizing: border-box;
-  background-color: snow;
+  background-color: rgb(173, 170, 170);
 }
 
 .App {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
   text-align: center;
 }
 
@@ -45,7 +48,10 @@ body {
 }
 
 .users-container {
-  background-color: #c4bfbf;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .search-input {
@@ -55,7 +61,9 @@ body {
 
 .send-invite-btn {
   padding: 5px 20px;
-  background-color: orange;
+  background-color: rgb(213, 139, 1);
   border: none;
   border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
 }
