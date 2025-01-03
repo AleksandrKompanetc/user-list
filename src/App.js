@@ -33,16 +33,21 @@ function App() {
     }
   }
 
+  const onClickSendInvites = () => {
+    setSuccess(true);
+  }
+
   return (
     <div className="App">
-      {success ? <Success /> : <Users 
+      {success ? (<Success />) : (<Users 
         onChangeSearchValue={onChangeSearchValue} 
         searchValue={searchValue} 
         items={users} 
         isLoading={isLoading} 
         invites={invites}
         onClickInvite={onClickInvite}
-      />}
+        onClickSendInvites={onClickSendInvites}
+      />)}
     </div>
   );
 }
