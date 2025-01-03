@@ -5,6 +5,7 @@ import { Users } from './components/Users/Users';
 function App() {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchValue, setSearchValue] = useState('');
 
   useEffect(() => {
     fetch('https://reqres.in/api/users')
@@ -17,9 +18,18 @@ function App() {
       }).finally(() => setIsLoading(false));
   }, [])
 
+  const onChangeSearchValue = (event) => {
+    setSearchValue(event.target.value)
+  }
+
   return (
     <div className="App">
-      <Users items={users} isLoading={isLoading} />
+      <Users 
+        onChangeSearchValue={onChangeSearchValue} 
+        searchValue={searchValue} 
+        items={users} 
+        isLoading={isLoading} 
+      />
       {/* <Success /> */}
     </div>
   );
