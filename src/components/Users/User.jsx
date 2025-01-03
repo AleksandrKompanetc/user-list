@@ -8,7 +8,13 @@ export const User = ({ id, email, first_name, last_name, avatar, onClickInvite, 
           <span className='user-name'>{first_name} {last_name}</span> <br/>
           <span className='user-email'>{email}</span>
       </div>
-      <img onClick={onClickInvite} width="26px" className='action' src={`./${isInvited ? 'minus.svg' : 'plus.svg'}`} alt="Action" />
+      <img 
+        onClick={onClickInvite(id)} 
+        width="26px" 
+        className='action' 
+        src={`./${isInvited ? 'minus.svg' : 'plus.svg'}`} 
+        alt="Action" 
+      />
     </div>
   </li>
 )
