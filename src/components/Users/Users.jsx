@@ -28,7 +28,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
           {items.filter(obj => {
             const fullName = (obj.first_name + obj.last_name).toLowerCase();
 
-            return fullName.includes(searchValue.toLowerCase()) || obj.email.includes(searchValue.toLowerCase())
+            return fullName.includes(searchValue.toLowerCase()) || obj.email.toLowerCase().includes(searchValue.toLowerCase())
           })
           .map((obj) => (
             <User key={obj.id} {...obj} />
